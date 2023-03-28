@@ -110,13 +110,11 @@ int main(int argc, char *argv[]) {
 // Exercício 5 (XP 20): F.U.P que simule um jogo de adivinhação. O programa inicializa sorteando um número de 1 a 100. Depois, o usuário digita um palpite até acertar o número. Para cada palpite, o
 // programa indica se o número digitado é maior ou menor que o número sorteado. No final, o programa mostra quantas tentativas o usuário precisou para acertar
 
-
+/*
 void Exerc3(){	
 	int tentativa;
 	int randNumber = rand() % 100;
 	int count = 0;
-	
-	printf("%i", randNumber);
 		
 	while (1)
 	{
@@ -147,7 +145,33 @@ int main(){
 	Exerc3();
 	return 0;
 }
+*/
 
+
+// Exercício 6 (XP 17): F.U.P que (i) implemente uma função recursiva para calcular o fatorial de um número; (ii) Leia o número “n” e retorne o fatorial correspondente.
+
+/*
+void Exerc3(){	
+
+int main(){
+	Exerc3();
+	return 0;
+}
+*/
+
+// Exercício 12 (XP 150): F.U.P que implemente um jogo da velha para dois jogadores humanos no prompt de comando.
+
+int main(int argc, char *argv[]) {
+	int matriz[3][3];
+	
+	for (int i = 0; i < 3; i++)
+	{
+		for (int j = 0; j < 3; j++)
+			printf("%i", matriz[3][3]);
+		
+		printf("\n");
+	}
+}
 
 
 
