@@ -107,13 +107,46 @@ int main(int argc, char *argv[]) {
 }
 */
 
+// Exercício 5 (XP 20): F.U.P que simule um jogo de adivinhação. O programa inicializa sorteando um número de 1 a 100. Depois, o usuário digita um palpite até acertar o número. Para cada palpite, o
+// programa indica se o número digitado é maior ou menor que o número sorteado. No final, o programa mostra quantas tentativas o usuário precisou para acertar
 
 
+void Exerc3(){	
+	int tentativa;
+	int randNumber = rand() % 100;
+	int count = 0;
+	
+	printf("%i", randNumber);
+		
+	while (1)
+	{
+		count++;
+		printf("\n-->");
+		scanf("%i", &tentativa);
+		
+		if (tentativa == randNumber)
+		{
+			printf("Voce acertou");
+			break;
+		}
+			
+		else if (tentativa > randNumber)
+		{
+			printf("É menor");
+		}
+		
+		else if (tentativa < randNumber)
+		{
+			printf("É maior ");
+		}	
+	}
+	printf("Parabens, voce acertou com: %i tentativas", count);
+}
 
-
-
-
-
+int main(){
+	Exerc3();
+	return 0;
+}
 
 
 
