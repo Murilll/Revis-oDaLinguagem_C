@@ -37,6 +37,103 @@ int main(int argc, char *argv[]) {
 		}
 	}
 }
+*/
+
+
+// Exercício 3 (XP 15): F.U.P que leia 10 números decimais e armazene-os em um vetor, (i) calcule a média dos números lidos, (ii) mostre o maior e o (iii) menor número.
+
 /*
+void Exerc3(){	
+	int vetor[10];
+	int maior = 0;
+	int menor = vetor[0];
+	int media;
+	
+	for (int i = 0; i < 11; i++)
+	{
+		printf("Insira o %d º número: ", i);
+		scanf("%d", &vetor[i]);
+		if (maior < vetor[i])
+		{
+			maior = vetor[i];
+		}
+		if (vetor[i] < menor)
+		{
+			menor = vetor[i];
+		}
+
+		media = media + vetor[i];	
+	}
+
+media = media / 4;
+
+	printf("\nMaior: %d", maior);
+	printf("\nMenor: %d", menor);
+	printf("\nMedia: %d", media);	
+}
+
+int main(){
+	Exerc3();
+	return 0;
+}
+*/
+
+// Exercício 4 (XP 17): F.U.P que leia os lados de um triângulo que classifique o triângulo em: equilátero, isósceles e escaleno.
+
+/*
+int main(int argc, char *argv[]) {
+	int lado[3];
+		
+	for (int i = 0; i < 3; i++)
+	{
+		printf("Coloque o primeiro lado de um triangulo: ");
+		scanf("%i", &lado[i]);
+	}
+	
+	if (lado[0] == lado[1] && lado[1] == lado[2])
+	{
+		printf("O triangulo e equilatero!");
+	}
+	
+	else if (lado[0] == lado[1] && lado[1] != lado[2] || lado[0] != lado[1] && lado[1] == lado[2] || lado[0] == lado[2] && lado[2] != lado[1])
+	{
+		printf("O triangulo e isoceles!");
+	}
+	
+	else
+	{
+		printf("O triangulo e escaleno!");
+	}
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
