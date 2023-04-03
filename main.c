@@ -150,17 +150,28 @@ int main(){
 
 // Exercício 6 (XP 17): F.U.P que (i) implemente uma função recursiva para calcular o fatorial de um número; (ii) Leia o número “n” e retorne o fatorial correspondente.
 
-/*
-void Exerc3(){	
 
-int main(){
-	Exerc3();
-	return 0;
+int fatorial(int n) {
+    if (n == 0) {
+        return 1;
+    } else {
+        return n * fatorial(n-1);
+    }
 }
-*/
+
+int main() {
+    int num;
+    printf("Digite um n�mero para calcular o fatorial: ");
+    scanf("%d", &num);
+    int resultado = fatorial(num);
+    printf("%d! = %d\n", num, resultado);
+    return 0;
+}
+
 
 // Exercício 12 (XP 150): F.U.P que implemente um jogo da velha para dois jogadores humanos no prompt de comando.
 
+/*
 int main(int argc, char *argv[]) {
 	int matriz[3][3];
 	
@@ -172,6 +183,7 @@ int main(int argc, char *argv[]) {
 		printf("\n");
 	}
 }
+*/
 
 
 
